@@ -2,7 +2,7 @@
   "schema": 1,
   "env": "stg",
   "repo": "METACREW-COMPANY/talkx-releases",
-  "updatedAt": "2026-10-23T09:57:34.959Z",
+  "updatedAt": "2026-10-26T01:37:40.594Z",
   "natives": {
     "android": {
       "461": {
@@ -236,6 +236,61 @@
     }
   },
   "builds": [
+    {
+      "buildId": "web-4.0.0-55453b0",
+      "webVersion": "4.0.0",
+      "commit": "55453b09826b638e1fb2c90d892ea881d389ca5f",
+      "createdAt": "2026-10-26T01:37:31.069Z",
+      "url": "https://github.com/METACREW-COMPANY/talkx-releases/releases/download/web-4.0.0-55453b0/bundle.zip",
+      "sha256": "ea0357b8e2be0bcd0d2905f764b402f1af5f631c1d65ea67dd7e3cc2d614c204",
+      "size": 1880276,
+      "contentHash": "1c1532e2add1",
+      "bridgeApiVersion": 1,
+      "capacitor": "8",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "requiredCapabilities": {
+        "android": [
+          "@capacitor/core@8",
+          "@capacitor-community/file-opener@8",
+          "@capacitor-community/media@9",
+          "@capacitor-firebase/messaging@8",
+          "@capacitor/app@8",
+          "@capacitor/app-launcher@8",
+          "@capacitor/browser@8",
+          "@capacitor/filesystem@8",
+          "@capacitor/preferences@8",
+          "@capacitor/share@8",
+          "@capacitor/status-bar@8",
+          "@capawesome/capacitor-badge@8",
+          "@capgo/capacitor-speech-recognition@8",
+          "@capgo/capacitor-updater@8",
+          "mobile-ci-downloader@1+d8999cc9d441"
+        ],
+        "ios": [
+          "@capacitor/core@8",
+          "@capacitor-community/file-opener@8",
+          "@capacitor-community/media@9",
+          "@capacitor-firebase/messaging@8",
+          "@capacitor/app@8",
+          "@capacitor/app-launcher@8",
+          "@capacitor/browser@8",
+          "@capacitor/filesystem@8",
+          "@capacitor/preferences@8",
+          "@capacitor/share@8",
+          "@capacitor/status-bar@8",
+          "@capawesome/capacitor-badge@8",
+          "@capgo/capacitor-speech-recognition@8",
+          "@capgo/capacitor-updater@8",
+          "mobile-ci-downloader@1+d8999cc9d441"
+        ]
+      },
+      "status": "approved",
+      "rollout": 100,
+      "signature": "eIRjgGJ5AQdUGE5S2wPPUo7I0HlhzONuOkAxsiuMBXpoJk239Utz28IzVM0AR8OQtQyJeNuluVmP1cbvZN_9wQ"
+    },
     {
       "buildId": "web-4.0.0-4bbe773",
       "webVersion": "4.0.0",
@@ -623,7 +678,7 @@
     }
   ],
   "mirror": {
-    "assetId": 668701606,
-    "mirroredAt": "2026-10-26T01:35:44.505Z"
+    "assetId": 676658703,
+    "mirroredAt": "2026-10-26T01:37:46.896Z"
   }
 }
