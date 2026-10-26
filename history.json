@@ -2,7 +2,7 @@
   "schema": 1,
   "env": "stg",
   "repo": "METACREW-COMPANY/talkx-releases",
-  "updatedAt": "2026-10-26T08:49:01.348Z",
+  "updatedAt": "2026-10-26T08:50:13.402Z",
   "natives": {
     "android": {
       "461": {
@@ -192,6 +192,31 @@
           "mobile-ci-downloader@1+d8999cc9d441"
         ],
         "nativeInputs": "257292c7f2b2",
+        "commit": "b3aff617f273be69e7f7bf9fbac5d2983a4be11f",
+        "builtAt": "2026-10-21T07:46:18.263Z"
+      },
+      "488": {
+        "appVersion": "1.0.43",
+        "bridgeApiVersion": 1,
+        "capacitor": "8",
+        "capabilities": [
+          "@capacitor/core@8",
+          "@capacitor-community/file-opener@8",
+          "@capacitor-community/media@9",
+          "@capacitor-firebase/messaging@8",
+          "@capacitor/app@8",
+          "@capacitor/app-launcher@8",
+          "@capacitor/browser@8",
+          "@capacitor/filesystem@8",
+          "@capacitor/preferences@8",
+          "@capacitor/share@8",
+          "@capacitor/status-bar@8",
+          "@capawesome/capacitor-badge@8",
+          "@capgo/capacitor-speech-recognition@8",
+          "@capgo/capacitor-updater@8",
+          "mobile-ci-downloader@1+d8999cc9d441"
+        ],
+        "nativeInputs": "cce83894bd8d",
         "nativeInputsDetail": {
           "files": {
             "assets": "eb80b19046c5",
@@ -216,10 +241,10 @@
             "APP_ID_IOS": "5d11a4164c58",
             "APP_NAME": "5eba9e4a00c4",
             "APP_SPLASH_ICON": "d847f666718f",
-            "APP_VERSION": "c1e7caf1f8a0",
+            "APP_VERSION": "3035a3f94a02",
             "BUILD_CMD": "e3b0c44298fc",
             "CAP_ALLOW_NAVIGATION": "e3b0c44298fc",
-            "CAP_APPEND_USER_AGENT": "33a6864c337d",
+            "CAP_APPEND_USER_AGENT": "e5b5e3914fed",
             "CAP_HOSTNAME": "9bf8a8bb653a",
             "CAP_ICON_BG": "f2074b6cef37",
             "CAP_SPLASH_BG": "55302efec624",
@@ -255,8 +280,8 @@
             "WEB_OTA_ENABLED": "b5bea41b6c62"
           }
         },
-        "commit": "b3aff617f273be69e7f7bf9fbac5d2983a4be11f",
-        "builtAt": "2026-10-21T07:46:18.263Z"
+        "commit": "18b498b801d4605aceabf6f5bd89210a4665909e",
+        "builtAt": "2026-10-26T08:50:11.374Z"
       }
     }
   },
@@ -813,7 +838,7 @@
     }
   ],
   "kind": "history",
-  "rev": 4,
+  "rev": 5,
   "events": [
     {
       "at": "2026-10-26T04:23:44.015Z",
@@ -849,10 +874,20 @@
       "platform": "android",
       "nativeBuild": "488",
       "appVersion": "1.0.43"
+    },
+    {
+      "at": "2026-10-26T08:50:13.402Z",
+      "rev": 5,
+      "actor": "github-actions[bot]",
+      "run": "https://github.com/METACREW-COMPANY/build-mobile-apps-vibex/actions/runs/40293888781",
+      "type": "register",
+      "platform": "ios",
+      "nativeBuild": "488",
+      "appVersion": "1.0.43"
     }
   ],
   "mirror": {
-    "assetId": 677561130,
-    "mirroredAt": "2026-10-26T08:49:13.241Z"
+    "assetId": 677563918,
+    "mirroredAt": "2026-10-26T08:50:25.019Z"
   }
 }
