@@ -2,7 +2,7 @@
   "schema": 1,
   "env": "stg",
   "repo": "METACREW-COMPANY/talkx-releases",
-  "updatedAt": "2026-10-26T04:23:44.015Z",
+  "updatedAt": "2026-10-26T04:25:29.525Z",
   "natives": {
     "android": {
       "461": {
@@ -236,6 +236,61 @@
     }
   },
   "builds": [
+    {
+      "buildId": "web-4.0.0-807200d",
+      "webVersion": "4.0.0",
+      "commit": "807200df7cc362323c29a739c864ff11e0af3f6c",
+      "createdAt": "2026-10-26T04:25:16.824Z",
+      "url": "https://github.com/METACREW-COMPANY/talkx-releases/releases/download/web-4.0.0-807200d/bundle.zip",
+      "sha256": "c80d4da374c4ebf326f86b7767e0463feb2de4ee29571c800655941d954e9a23",
+      "size": 1880276,
+      "contentHash": "1c1532e2add1",
+      "bridgeApiVersion": 1,
+      "capacitor": "8",
+      "platforms": [
+        "android",
+        "ios"
+      ],
+      "requiredCapabilities": {
+        "android": [
+          "@capacitor/core@8",
+          "@capacitor-community/file-opener@8",
+          "@capacitor-community/media@9",
+          "@capacitor-firebase/messaging@8",
+          "@capacitor/app@8",
+          "@capacitor/app-launcher@8",
+          "@capacitor/browser@8",
+          "@capacitor/filesystem@8",
+          "@capacitor/preferences@8",
+          "@capacitor/share@8",
+          "@capacitor/status-bar@8",
+          "@capawesome/capacitor-badge@8",
+          "@capgo/capacitor-speech-recognition@8",
+          "@capgo/capacitor-updater@8",
+          "mobile-ci-downloader@1+d8999cc9d441"
+        ],
+        "ios": [
+          "@capacitor/core@8",
+          "@capacitor-community/file-opener@8",
+          "@capacitor-community/media@9",
+          "@capacitor-firebase/messaging@8",
+          "@capacitor/app@8",
+          "@capacitor/app-launcher@8",
+          "@capacitor/browser@8",
+          "@capacitor/filesystem@8",
+          "@capacitor/preferences@8",
+          "@capacitor/share@8",
+          "@capacitor/status-bar@8",
+          "@capawesome/capacitor-badge@8",
+          "@capgo/capacitor-speech-recognition@8",
+          "@capgo/capacitor-updater@8",
+          "mobile-ci-downloader@1+d8999cc9d441"
+        ]
+      },
+      "status": "pending",
+      "rollout": 100,
+      "signature": "epFPC2O_we7-09tvXTqp7INr4i6PWFtLuDhvm8kPmXVErEh84ZLZo6zZARLfGMDf_dZpkAxHLJMaK0YStubhFg"
+    },
     {
       "buildId": "web-4.0.0-55453b0",
       "webVersion": "4.0.0",
@@ -678,7 +733,7 @@
     }
   ],
   "kind": "history",
-  "rev": 1,
+  "rev": 2,
   "events": [
     {
       "at": "2026-10-26T04:23:44.015Z",
@@ -686,10 +741,19 @@
       "actor": "ditavo98",
       "run": "https://github.com/METACREW-COMPANY/build-mobile-apps-vibex/actions/runs/40268832981",
       "type": "import"
+    },
+    {
+      "at": "2026-10-26T04:25:29.525Z",
+      "rev": 2,
+      "actor": "ditavo98",
+      "run": "https://github.com/METACREW-COMPANY/build-mobile-apps-vibex/actions/runs/40268821378",
+      "type": "publish",
+      "buildId": "web-4.0.0-807200d",
+      "to": "pending"
     }
   ],
   "mirror": {
-    "assetId": 676996610,
-    "mirroredAt": "2026-10-26T04:23:49.837Z"
+    "assetId": 676999906,
+    "mirroredAt": "2026-10-26T04:25:40.309Z"
   }
 }
