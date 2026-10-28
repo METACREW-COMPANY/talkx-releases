@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://api.github.com; img-src 'self' data: https://avatars.githubusercontent.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Web OTA console</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318202A'/%3E%3Crect x='6' y='9' width='20' height='4' rx='1' fill='%2337B37E'/%3E%3Crect x='6' y='15' width='13' height='4' rx='1' fill='%23E2A42C'/%3E%3Crect x='6' y='21' width='8' height='4' rx='1' fill='%235B7BE6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="console.css">
+  <script type="module" src="console.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="brand-app" id="app-name">App</span>
+      <span class="brand-title">Web OTA</span>
+    </div>
+    <span class="env-badge" id="env" aria-label="Environment"></span>
+    <div class="top-meta">
+      <span class="sync" id="sync-state" aria-live="polite"></span>
+      <button class="btn ghost small" id="refresh" type="button" title="Reload channel.json">Refresh</button>
+      <span id="account"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="notices" class="notices"></div>
+
+    <section class="by-version" aria-labelledby="versions-title">
+      <div class="section-head">
+        <h2 id="versions-title">By app version</h2>
+        <p class="hint">One block per app version in the stores. The strip shows what its devices run after their next check (each cell is 1% of devices); the list shows the web builds it can run. A web build's status is shared: pausing or revoking it changes every version that lists it.</p>
+      </div>
+      <div id="versions" class="versions"></div>
+      <details id="others" class="panel version others" hidden></details>
+    </section>
+
+    <section class="panel" aria-labelledby="activity-title">
+      <div class="panel-head">
+        <h2 id="activity-title">Activity</h2>
+        <p class="hint">The full release history, newest first: every publish, app registration and change, with who did it and why.</p>
+      </div>
+      <div id="runs" class="runs"></div>
+      <ol id="activity" class="activity"></ol>
+    </section>
+  </main>
+
+  <footer class="foot" id="foot"></footer>
+
+  <dialog id="action-dialog" class="dialog" aria-labelledby="action-title"></dialog>
+  <dialog id="token-dialog" class="dialog" aria-labelledby="token-title"></dialog>
+</body>
+</html>
